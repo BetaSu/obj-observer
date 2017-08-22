@@ -14,7 +14,8 @@ window.abc = {
   }
 }
 
-let abc_o = new Observer(abc, function (n, o) {
+let abc_o = new Observer(abc, function (n, o, path) {
   console.log('new', n)
   console.log('old', o)
+  console.log('path', path)
 })
