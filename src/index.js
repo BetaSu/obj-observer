@@ -1,4 +1,5 @@
 import Observer from './observer'
+import { data } from './v2/observer'
 
 window.abc = {
   aa: 123,
@@ -19,3 +20,7 @@ let abc_o = new Observer(abc, function (n, o, path) {
   console.log('old', o)
   console.log('path', path)
 })
+
+
+// v2版本
+window.data = data
